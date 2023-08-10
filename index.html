@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <title>portfolio website</title>
+</head>
+
+<body>
+    <div class="navbar-section">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" id="logo" href="#home">Praveen.<span>M</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav" id="nav-items">
+                    <a class="nav-item nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#about">About</a>
+                    <a class="nav-item nav-link" href="#services">Services</a>
+                    <a class="nav-item nav-link" href="#">Portfolio</a>
+                    <a class="nav-item nav-link" href="#contactme">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- +++++++++++++++++home++++++++++++++++++++++ -->
+    <div id="home">
+        <div class="d-flex flex-column justify-content-center home-container">
+            <p class="title">Web Developer</p>
+            <h1 class="short-intro">Hi, I'm <span>Praveen</span> <br> from Hyderabad</h1>
+        </div>
+
+    </div>
+
+    <!-- ++++++++++++++about++++++++++++++++++++++ -->
+    <div id="about">
+        <h1 class="section-title text-center mb-4">About Me</h1>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="text-center">
+                        <img class="myprofile-image" src="https://res.cloudinary.com/dscyhwovo/image/upload/v1689419536/IMG_5767_zbupkn.jpg">
+                    </div>
+                </div>
+                <div class="col-12 col-md-8">
+                    <p class="aboutme-content">My name is <span>Praveen Mekala</span> <br> I enjoy coding new projects and developing the old.<br> I am exited for the opportunity to be a part of a team.</p>
+                    <div class="list-items">
+
+                        <p class="list-item active-link" onclick="opencontent('skills')">Skills</p>
+                        <p class="list-item" onclick="opencontent('experience')">Experience</p>
+                        <p class="list-item" onclick="opencontent('education')">Education</p>
+
+                    </div>
+                    <div class="tab-content active-content" id="skills">
+                        <ul class="content-list-style">
+                            <li>
+                                <p>Static Web Design</p>
+                            </li>
+                            <li>
+                                <p>Responsive Web Design</p>
+                            </li>
+                            <li>
+                                <p>Dynamic Web Design</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="experience">
+                        <ul class="content-list-style">
+                            <li>
+                                <h4>Web developer </h4>
+                            </li>
+                            <li>
+                                <p>Archo Code Design Studios</p>
+                            </li>
+                            <li>
+                                <h4>IT Recruitor</h4>
+                            </li>
+                            <li>
+                                <p>Encore, Hyderabad</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <ul class="content-list-style">
+                            <li>
+                                <h4>Nxt Wave <span>(2023)</span></h4>
+                            </li>
+                            <li>
+                                <p>Full Stack Development, in progress.</p>
+                            </li>
+                            <li>
+                                <h4>CMR Institue of Technology <span>(2021)</span></h4>
+                            </li>
+                            <li>
+                                <p>Electronics & communication Engineering<br>Hyderabad</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="text-center mt-4">
+                        <a href="#" class="resume-button" download>My Resume</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -+++++++++++++my services++++++++++++++++ -->
+    <div id="services">
+        <h1 class="section-title mb-4 text-center">My Services</h1>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-4 text-center">
+                    <div class="services-tabs">
+                        <h2>Web Designer</h2>
+                        <img class="services-images" src="https://cdn.pixabay.com/photo/2019/10/09/07/28/development-4536630_640.png">
+                        <div>
+                            <p>Create and build websites and web pages by combining any number of visual design elements including text, photos, graphics, animations and videos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 text-center">
+                    <div class="services-tabs">
+                        <h2>UI/UX Designer</h2>
+                        <img class="services-images" src="https://img.freepik.com/free-vector/gradient-ui-ux-background_23-2149052117.jpg">
+                        <div>
+                            <p>Create user-friendly interfaces that enable users to understand how to use complex technical products.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 text-center">
+                    <div class="services-tabs">
+                        <h2>App Designer</h2>
+                        <img class="services-images" src="https://appinventiv.com/wp-content/uploads/sites/1/2019/02/How-Important-is-UI-UX-Design-in-an-App-Development-Process.png">
+                        <div>
+                            <p>Create programs for smartphones, tablets and computers.Work in a range of industries and across a number of platforms.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="btn seemore-btn mt-3 text-center ml-4">See More ...</button>
+    </div>
+    <!-- ++++++++++++++    portfolio   ++++++++++++++++++++++ -->
+    <div id="portfolio">
+        <h1 class="section-title mb-4 text-center">My Services</h1>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-6 mt-3">
+                    <div class="work1 text-center d-flex flex-column justify-content-center">
+                        <h1>Travel website</h1>
+                        <a href="#">Visit Now..</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mt-3">
+                    <div class="work2 text-center d-flex flex-column justify-content-center">
+                        <h1>Hotel Room Website</h1>
+                        <a href="#">Visit Now..</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- +++++++++++++++++++contact me +++++++++++++++++++++++++ -->
+    <div id="contactme">
+
+        <h1 class="section-title text-center mb-4"> Contact Me</h1>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div>
+                        <div class="mb-2">
+                            <i class="fa-solid fa-paper-plane mr-2 contact-text"></i>
+                            <p class="contact-text">praveenchinna1801@gmail.com</p><br>
+                        </div>
+                        <div class="mb-2">
+                            <i class="fa-solid fa-phone mr-2 contact-text"></i>
+                            <p class="contact-text">+91 7095297295</p><br>
+                        </div>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/praveen_._chinna/"><i class="fa-brands fa-square-instagram social-icon"></i></a>
+                            <a href="https://wa.me/qr/A57XKES2RY3XM1"><i class="fa-brands fa-square-whatsapp social-icon"></i></a>
+                            <a href="http://www.linkedin.com/in/praveen-mekala-825233237"><i class="fa-brands fa-linkedin social-icon"></i></a>
+                            <a href="https://github.com/PraveenYadav123"><i class="fa-brands fa-square-github social-icon"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-8">
+                    <div>
+                        <form>
+                            <input class="input-bars" type="text" name="Name" placeholder="Your Name" required>
+                            <input class="input-bars" type="email" name="Email" placeholder="Your Email" required>
+                            <textarea class="message-bar" rows="6" name="Message" placeholder="Your Message" required></textarea>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-outline-danger submit-button">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- +++++++++++++++++copyright+++++++++++++++++++++++ -->
+    <div class="copyright text-center">
+        <p>copyright <i class="fa-regular fa-copyright"></i> praveenmekala web design </p>
+    </div>
+
+    <script src="https://kit.fontawesome.com/ff4c1451df.js" crossorigin="anonymous"></script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwcsIhEcxNg7qSv7D9JHQ6Jo59e6U1UVcI6g02ijvJULacpIxDvaA9KrzXQynkzKbANlQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+
+</html>
